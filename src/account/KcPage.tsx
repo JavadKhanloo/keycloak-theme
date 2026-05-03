@@ -1,3 +1,4 @@
+import "../fonts.css";
 import { Suspense } from "react";
 import type { ClassKey } from "keycloakify/account";
 import type { KcContext } from "./KcContext";

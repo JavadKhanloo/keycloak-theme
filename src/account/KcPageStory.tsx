@@ -16,7 +16,14 @@ const kcContextExtensionPerPage: KcContextExtensionPerPage = {};
 export const { getKcContextMock } = createGetKcContextMock({
     kcContextExtension,
     kcContextExtensionPerPage,
-    overrides: {},
+    overrides: {
+        realm: {
+            internationalizationEnabled: true
+        },
+        locale: {
+            currentLanguageTag: "fa"
+        }
+    },
     overridesPerPage: {}
 });
 

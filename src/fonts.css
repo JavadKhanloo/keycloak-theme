@@ -1,0 +1,19 @@
+/**
+ * IRANSansXV from `/public` (served at site root in dev and Keycloak theme resources in prod).
+ */
+@font-face {
+    font-family: "IRANSansXV";
+    src:
+        url("/IRANSansXV.woff2") format("woff2"),
+        url("/IRANSansXV.woff") format("woff");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Account theme و هر صفحه‌ای که Tailwind login را لود نمی‌کند */
+@layer base {
+    html {
+        font-family: "IRANSansXV", ui-sans-serif, system-ui, sans-serif;
+    }
+}
